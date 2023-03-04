@@ -1,0 +1,19 @@
+{
+	"name": "Ad Rotator",
+	"description": "Display your own ad banners locally.",
+	"license": "GPL-3.0",
+	"author": "Matt Bergman",
+	"version": "0.0.0",
+	"scope": "site",
+	"minimumPubliiVersion": "0.39.0",
+	"usePluginSettingsView": false,
+    "config": [
+        {
+            "group": "Configuration",
+            "name": "enabled",
+            "label": "Enabled",
+            "type": "checkbox",
+            "value": true
+        }
+    ]
+}
