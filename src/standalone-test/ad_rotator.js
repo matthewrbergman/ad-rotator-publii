@@ -2,18 +2,18 @@
 
 Potential additions:
 - Be able to specify a weight to each ad
+      - Possible now, but would limit the number of ads
 
 */
-
 
 /* Start of UI Config */
 // This section will get its values from the UI
 const images = [
-  "image1.jpg",
-  "image2.jpg",
-  "image3.jpg",
-  "image4.jpg",
-  "image5.jpg",
+  "001.jpg",
+  "002.jpg",
+  "003.jpg",
+  "004.jpg",
+  "005.jpg",
 ];
 
 const links = [
@@ -48,7 +48,7 @@ function getRandomAd() {
 // Function to update the image displayed
 function updateAd() {
   const ri = Math.floor(Math.random() * images.length);
-
+  
   // TODO : check for out of bounds
   if (images[ri] !== "undefined" && links[ri] !== "undefined") {
     adImage.src = images[ri];
@@ -56,7 +56,7 @@ function updateAd() {
   }
 }
 
-// Initial Display
+// Initial Setup
 updateAd();
 
 // Set an interval to update the image every 5 seconds
